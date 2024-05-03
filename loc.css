@@ -1,10 +1,71 @@
 .image-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: #333;
+  background:url(./img/imggg.jpg);
+}
+
+nav {
+  background-color: #ac1212;
+  /*cor da barra de cima*/
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  padding: 10px;
+  height: 200px;
+}
+
+
+nav a {
+  /*caixa em cima do texto quando passa o cursor*/
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  transition: background-color 0.3s;
+}
+
+/* Fim caixa em cima do texto quando passa o cursor*/
+
+nav a:hover {
+  background-color: #c24b4b;
+  /* cor caixa do texto quando passa o cursor*/
+}
+
+
+footer {
+  /* Rodapé de baixo*/
+  text-align: center;
+  background: url(./img/bg2.jpg);
+  padding: 10px;
+}
+
+nav {
+  padding: 10px;
+  text-align: center;
+}
+
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+  .copyright {
+    /* Cor do texto Rodapé de baixo*/
     color: white;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 13px;
+    margin: 20px;
   }

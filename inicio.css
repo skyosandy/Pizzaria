@@ -1,12 +1,12 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background: url(./img/bg.jpg);
+    background: url(./img/bg.jpg); /*imagem de fundo*/
     color: #333;
 }
 
 nav {
-    background-color: #ac1212;
+    background-color: #ac1212; /*cor da barra de cima*/
     display: flex;
     align-items: center;
 }
@@ -17,52 +17,52 @@ nav img {
 }
 
 
-nav a {
+nav a { /*caixa em cima do texto quando passa o cursor*/
     color: white;
     text-decoration: none;
     padding: 10px 20px;
     margin: 0 10px;
-    transition: background-color 0.3s;
-}
+    transition: background-color 0.3s; 
+} /* Fim caixa em cima do texto quando passa o cursor*/
 
 nav a:hover {
-    background-color: #c24b4b;
+    background-color: #c24b4b; /* cor caixa do texto quando passa o cursor*/
 }
 
 
-.slider {
+.slider {  /* Delimita o tamanho e cria o espaço dos slides, imagens rotativas*/
     margin: 0 auto;
     width: 800px;
     height: 400px;
-    overflow: hidden;
+    overflow: hidden; /* Deixar apenas uma img aparecendo*/
 }
 
 
-.slides {
+.slides { /* Organiza os inputs*/
     width: 3200px;
     height: 400px;
     display: flex;
 }
 
 
-.slides input {
+.slides input { /* Esconde os radios*/
     display: none;
 }
 
 
-.slide {
+.slide { /* Posição das imgs*/
     width: 25%;
     position: relative;
     transition: 5s;
 }
 
 
-.slide img {
+.slide img { /* Tamanho das imgs*/
     width: 800px;
 }
 
 
-.manual-navigation {
+.manual-navigation { /* Centraliza os botoes*/
     position: absolute;
     width: 800px;
     margin-top: -40px;
@@ -77,20 +77,20 @@ nav a:hover {
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
-}
+}/* Termina de centraliza os botoes*/
 
 
-.manual-btn:not(:last-child) {
+.manual-btn:not(:last-child) { /* Espaço entre eles*/
     margin-right: 40px;
 }
 
 
-.manual-btn:hover {
+.manual-btn:hover { /* Botão com a cor,branco*/
     background-color: #FFF;
 }
 
 
-#radio1:checked~.first {
+#radio1:checked~.first { 
     margin-left: 0;
 }
 
@@ -133,7 +133,7 @@ nav a:hover {
 }
 
 
-#radio1:checked~.navigation-auto .auto-btn1 {
+#radio1:checked~.navigation-auto .auto-btn1 { /* O branco permanece*/
     background-color: #FFF;
 }
 
@@ -153,14 +153,14 @@ nav a:hover {
 }
 
 
-footer {
+footer { /* Rodapé de baixo*/
     text-align: center;
     background: url(./img/bg2.jpg);
     padding: 10px;
 }
 
 
-.copyright {
+.copyright { /* Cor do texto Rodapé de baixo*/
     color: white;
     font-size: 13px;
     margin: 20px;
