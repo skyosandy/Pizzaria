@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .reserva{
+        align-items: center;
+    }
+</style>
+</head>
+<body>
+    <form >
+        <label for="nomesobrenome">Nome e Sobrenome</label>
+        <input type="text" id="nomesobrenome" class="input-padrao" required>
+     <br>
+     <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+     <br>
+     <br>
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+     <br>
+     <br>
+        <label for="reserva">Número da Mesa:</label>
+        <textarea cols="10" rows="1" id="mensagem" class="input-padrao" required></textarea>
+     <br>
+     <br>
+        <fieldset>
+            <legend>Qual horário da sua reserva?</legend>
+            <select>
+                <option>18:00</option>
+                <option>19:00</option>
+                <option>20:00</option>
+            </select>
+        </fieldset>
+     <br>
+     <br>   
+        <fieldset>
+            <legend>Qual o dia da sua reserva?</legend>
+            <input type="date" name="data" id="data">
+        </fieldset>
+     <br>
+     <br>
+        <fieldset>
+            <legend>Para quantas pessoas é a resenva?</legend>
+            <input type="number" name="quantpessoas" id="quantpessoas">
+        </fieldset>
+
+        <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+
+        <input type="submit" value="Enviar formulário" class="enviar">
+    </form>
+</body>
+</html>
